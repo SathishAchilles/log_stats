@@ -12,4 +12,5 @@ Metrics/BlockLength:
 Style/FrozenStringLiteralComment:
   Exclude:
     - 'spec/**/**'
+    - 'app/models/*'
 
