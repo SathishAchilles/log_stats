@@ -8,15 +8,18 @@ class LogEntryProcessor < ApplicationService
   def execute
     @log_record = split_logs_into_columns
     LogRecordValidator.validate!(log_record)
-    page_stat = PageStat.new(log_record[0])
-    page_stat.ingresses = Ingress.new(ip: log_record[1])
-    PageStatsRepository.instance.write = page_stat
-    true
+    store_log_record
   end
 
   private
 
   attr_reader :separator, :log_entry, :log_record
+
+  def store_log_record
+    page_stat = PageStat.new(log_record[0])
+    page_stat.ingresses = Ingress.new(ip: log_record[1])
+    PageStatsRepository.instance.write = page_stat
+  end
 
   def split_logs_into_columns
     log_entry.split(separator)
