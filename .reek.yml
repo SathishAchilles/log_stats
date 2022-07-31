@@ -1,0 +1,5 @@
+---
+detectors:
+  UtilityFunction:
+    exclude:
+      - 'file_fixture'
