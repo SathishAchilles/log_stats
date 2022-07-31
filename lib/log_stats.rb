@@ -18,7 +18,7 @@ class LogStats
   def process_file
     FileProcessor.execute(file)
   rescue StandardError => e
-    $stderr.write "Files Processing Failed!\n"
+    $stderr.write "File Processing Failed!\n"
     $stderr.write e.message
   end
 

@@ -35,7 +35,7 @@ RSpec.describe LogStats do
       let(:file_path) { file_fixture('no such file') }
 
       it 'is expected to raise Missing File error' do
-        expect { subject }.to output("Files Processing Failed!\nMissing File: #{file_path}").to_stderr
+        expect { subject }.to output("File Processing Failed!\nMissing File: #{file_path}").to_stderr
       end
     end
 

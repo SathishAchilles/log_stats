@@ -7,6 +7,8 @@ detectors:
   NilCheck:
     exclude:
       - LogRecordValidator#input_presence!
+  UncommunicativeVariableName:
+    enabled: false
 directories:
   "app/validators":
     MissingSafeMethod:
