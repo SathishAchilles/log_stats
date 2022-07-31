@@ -3,3 +3,10 @@ detectors:
   UtilityFunction:
     exclude:
       - 'file_fixture'
+  NilCheck:
+    exclude:
+      - LogRecordValidator#input_presence!
+directories:
+  "app/validators":
+    MissingSafeMethod:
+      enabled: false

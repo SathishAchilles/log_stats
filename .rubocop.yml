@@ -13,4 +13,5 @@ Style/FrozenStringLiteralComment:
   Exclude:
     - 'spec/**/**'
     - 'app/models/*'
+    - 'app/validators/*'
 
