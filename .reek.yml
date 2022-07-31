@@ -3,6 +3,7 @@ detectors:
   UtilityFunction:
     exclude:
       - 'file_fixture'
+      - BaseQueryBuilder#struct_from
   NilCheck:
     exclude:
       - LogRecordValidator#input_presence!
