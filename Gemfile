@@ -11,6 +11,10 @@ group :development do
   gem 'rubocop', '~> 1.32', require: false
 end
 
+group :development, :test do
+  gem 'byebug', '~> 11.1', '>= 11.1.3'
+end
+
 group :test do
   gem 'rspec', '~> 3.11'
 end
