@@ -79,6 +79,10 @@ RSpec.configure do |config|
   # test failures related to randomization by passing the same `--seed` value
   # as the one that triggered the failure.
   Kernel.srand config.seed
+
+  config.after(:each) do
+    PageStatsRepository.instance.instance_variable_set(:@stats, {})
+  end
 end
 
 def file_fixture(file)

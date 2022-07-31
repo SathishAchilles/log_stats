@@ -14,7 +14,7 @@ RSpec.describe PopularQueryBuilder do
     page_stats.ingresses = ingress
   end
 
-  subject { described_class.query([page_stats]) }
+  subject { described_class.query({ page => page_stats }) }
   describe '.query' do
     it { is_expected.to include(expected_op) }
 

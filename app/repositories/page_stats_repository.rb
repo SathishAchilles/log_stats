@@ -8,12 +8,16 @@ class PageStatsRepository
   attr_reader :stats
 
   def initialize
-    @stats = []
+    @stats = {}
+  end
+
+  def find(page)
+    @stats[page]
   end
 
   def write=(row)
     raise TypeError unless row.is_a?(PageStat)
 
-    @stats << row
+    @stats[row.page] = row
   end
 end

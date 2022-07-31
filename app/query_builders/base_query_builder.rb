@@ -10,7 +10,7 @@ class BaseQueryBuilder
   end
 
   def initialize(data)
-    @data = data
+    @data = data.values
   end
 
   def query
