@@ -9,3 +9,7 @@ Style/FrozenStringLiteralComment:
 Metrics/BlockLength:
   Exclude:
     - 'spec/**/**'
+Style/FrozenStringLiteralComment:
+  Exclude:
+    - 'spec/**/**'
+

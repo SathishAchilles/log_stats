@@ -14,6 +14,7 @@
 #
 # See https://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 require 'bundler'
+require "#{Bundler.root}/config/initializers/zeitwerk"
 
 FIXTURE_PATH = Bundler.root.join('spec', 'fixtures').freeze
 
