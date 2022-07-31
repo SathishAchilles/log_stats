@@ -10,4 +10,3 @@ class InvalidLogEntryError < StandardError
     super(msg)
   end
 end
-

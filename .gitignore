@@ -1,3 +1,4 @@
 /.bundle/
 .ruby-version
 .rspec
+.byebug_history
