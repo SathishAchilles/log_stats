@@ -15,6 +15,7 @@ Style/FrozenStringLiteralComment:
     - 'app/models/*'
     - 'app/validators/*'
     - 'app/services/*'
+    - 'app/sorters/*'
 Lint/MissingSuper:
   Exclude:
     - 'app/services/*'
